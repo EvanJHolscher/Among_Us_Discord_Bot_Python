@@ -2,13 +2,12 @@ import discord
 from discord.ext import commands, tasks
 from discord.utils import get
 from dotenv import load_dotenv
+
 intents = discord.Intents.default()
 intents.members = True
 load_dotenv()
 Token = os.getenv('DISCORD_TOKEN')
 client = commands.Bot(command_prefix = '.', intents = intents)
-
-
 
 @client.event
 async def on_ready(): 
