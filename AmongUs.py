@@ -14,9 +14,7 @@ async def on_ready():
     await client.change_presence(status=discord.Status.online,activity = discord.Game('I AM GOD'))
   
     print('Bot is ready.')
-    #df = pd.DataFrame({"A":['Hello','Test']})
-    #df.to_csv(r'C:\Users\evan4\source\repos\AmongUsMoney\AmongUsMoney\AmongUsMoney.csv')
-
+    
 @client.event
 async def on_command_error(ctx,error):
     if isinstance(error, commands.MissingRequiredArgument):
